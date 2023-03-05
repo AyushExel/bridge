@@ -1,0 +1,8 @@
+
+{
+    "EmbeddingSimilarity": {
+        "path": "../cls",
+        "model": "resnet-18",
+        "dim": 64
+    }
+} 
