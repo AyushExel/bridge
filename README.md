@@ -35,3 +35,6 @@ Currently we're using json to write and ship contracts. You can use the followin
 }
 ```
 See a live example in example/ folder
+
+<img width="913" alt="Screenshot 2023-03-07 at 2 44 48 AM" src="https://user-images.githubusercontent.com/15766192/223232651-69d2ac69-3b5c-4fcc-87e8-d69be52bb3ee.png">
+
