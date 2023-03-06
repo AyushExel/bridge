@@ -4,5 +4,8 @@
         "path": "../cls",
         "model": "resnet-18",
         "dim": 64
+    },
+    "DetectionBoxBounds": {
+        "path": "../coco128/labels/train2017"
     }
 } 
