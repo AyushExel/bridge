@@ -8,7 +8,8 @@ class Result:
         
     
     def __str__(self) -> str:
-        return f" {self.name} " + f"{'success' if self.success else 'fail'} \n {self.logs} \n"
+        return f" {self.name} " + f"{'success' if self.success else 'fail'} \n" + ''.join([log+'\n' for log in self.logs])
+
 
     def write(self, name: str):
         # TODO:

@@ -27,7 +27,8 @@ class EmbeddingSimilarity(Contract):
         args = {
             "path": None,
             "model": "resnet-18",
-            "dim": 64
+            "dim": 64,
+            "sim": 60
         }
 
         return args
@@ -82,7 +83,7 @@ class EmbeddingSimilarity(Contract):
 
         for idx, emb in enumerate(embs[:len(embs)//2]):
                 [d], [i] = index.search(emb.reshape(1,-1), 2)
-                if d[1] < 60:
+                if d[1] < self.args.sim:
                     failed_logs.append(f" {img_paths[idx]} and {img_paths[i[1]]} are similar {d[1]}")
         
         return Result(name=self.__class__.__name__, success=len(failed_logs)==0, logs=failed_logs)
