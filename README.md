@@ -23,7 +23,8 @@ Detailed python docs coming soon.
 
 ## Installation
 Git clone the repo and run `pip install bridgeai`
-Pip package coming soon
+
+CLI coming soon
 
 ## Contract Language
 Currently I'm using json to write and ship contracts. You can use the following structure
