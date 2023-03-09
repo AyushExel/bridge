@@ -18,7 +18,7 @@ def get_version():
 
 
 setup(
-    name='bridge',
+    name='bridgeai',
     version=get_version(),
     python_requires='>=3.7',
     license='GPL-3.0',
